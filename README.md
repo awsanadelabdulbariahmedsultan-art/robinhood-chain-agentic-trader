@@ -3,7 +3,8 @@
 **Lead Architect & Owner:** Eng. Awsan Adel Abdulbari Ahmed Sultan  
 **Location:** Sana'a, Yemen  
 **Contact:** awsan.sultan@gmail.com | +967 777852433  
-**LinkedIn:** [Eng. Awsan Adel Abdulbari Ahmed Sultan](https://www.linkedin.com/in/awsan-adel-abdulbari-ahmed-sultan-8aa5a1a9)
+**LinkedIn:** [Eng. Awsan Adel Abdulbari Ahmed Sultan](https://www.linkedin.com/in/awsan-adel-abdulbari-ahmed-sultan-8aa5a1a9)  
+**Repository:** [robinhood-chain-agentic-trader](https://github.com/awsanadelabdulbariahmedsultan-art/robinhood-chain-agentic-trader)
 
 ---
 
@@ -11,7 +12,7 @@
 **robinhood-chain-agentic-trader** is an institutional-grade platform integrating decentralized on-chain assets with automated brokerage trading. It bridges:
 - **Web3 & DeFi:** Smart contracts deployed on **Robinhood Chain (L2)** and Ethereum-compatible networks.
 - **TradFi & Brokerage:** Automated equity, ETF, and crypto execution powered by the **Robinhood Trading MCP** (`https://agent.robinhood.com/mcp/trading`).
-- **Autonomous Governance:** Built-in programmatic risk management guardrails ensuring capital safety in isolated agent accounts.
+- **Autonomous Governance:** Built-in programmatic risk management guardrails ensuring capital safety in isolated agent accounts with configurable and open-ceiling options.
 
 ---
 
@@ -25,8 +26,10 @@ robinhood-chain-agentic-trader/
 │   ├── PlatformToken.sol         # ERC-20 utility & governance token ($AWSN)
 │   ├── PlatformNFT.sol           # ERC-721 tiered membership NFT with ERC-2981 royalties ($AWNX)
 │   └── Treasury.sol              # Autonomous protocol treasury manager
+├── scripts/
+│   └── deploy.js                 # Multi-contract automated deployment script
 ├── agent/
-│   ├── mcp_trading_agent.py      # Python agent controller with risk guardrails
+│   ├── mcp_trading_agent.py      # Python agent controller with dynamic risk guardrails
 │   └── requirements.txt          # Python dependencies
 ├── hardhat.config.js             # Network configurations for Robinhood Chain Mainnet/Testnet
 ├── package.json                  # Node.js project manifest and smart contract toolchain
