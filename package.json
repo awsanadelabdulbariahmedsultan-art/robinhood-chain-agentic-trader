@@ -1,0 +1,35 @@
+{
+  "name": "robinhood-chain-agentic-trader",
+  "version": "1.0.0",
+  "description": "Unified AI-Agentic Multi-Asset Platform on Robinhood Chain and Trading MCP",
+  "main": "hardhat.config.js",
+  "author": "Eng. Awsan Adel Abdulbari Ahmed Sultan <awsan.sultan@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "clean": "hardhat clean",
+    "deploy:robinhood-mainnet": "hardhat run scripts/deploy.js --network robinhoodMainnet",
+    "deploy:robinhood-testnet": "hardhat run scripts/deploy.js --network robinhoodTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "chai": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.22.2",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
