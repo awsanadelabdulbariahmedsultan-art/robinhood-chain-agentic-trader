@@ -1,0 +1,21 @@
+# Robinhood MCP & AI Agent Dependencies
+# Project: robinhood-chain-agentic-trader
+# Author: Eng. Awsan Adel Abdulbari Ahmed Sultan
+
+# MCP Protocol & Asynchronous Networking
+mcp>=1.0.0
+httpx>=0.27.0
+aiohttp>=3.9.5
+requests>=2.31.0
+
+# Web3 & Blockchain Interactions
+web3>=6.15.0
+eth-account>=0.11.0
+
+# Environment & Data Management
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+
+# Data Analysis & Logging
+pandas>=2.2.0
+numpy>=1.26.0
